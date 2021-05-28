@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template 
+from flask import Flask, jsonify, render_template, redirect 
 import os
 from secrets import token_urlsafe
 import redis
@@ -14,6 +14,9 @@ def index():
 def link():
     pass
 
+@app.route("/<slug>")
+def return_link(slug):
+    pass
 
 @app.route('/shorten')
 def shorten():
