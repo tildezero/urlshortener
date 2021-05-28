@@ -13,9 +13,9 @@ def index():
 @app.route("/link", methods = ['POST'])
 def link():
     if request.form.get("password") != os.getenv("PASSWORD"):
-        return render_template("<h1> wrong password </h1>"), 401
+        return "<h1> wrong password </h1>", 401
     db.set(request.form.get("key"), request.form.get("value"))
-    return render_template("<h1> done </h1>")
+    return "<h1> done </h1>"
 
 @app.route("/<slug>")
 def return_link(slug):
