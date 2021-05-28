@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, redirect 
+from flask import Flask, jsonify, render_template, redirect, request 
 import os
 from secrets import token_urlsafe
 import redis
@@ -11,7 +11,7 @@ def index():
     return render_template("form.html") 
 
 @app.route("/link", methods = ['POST'])
-def link(request):
+def link():
    print(request.form) 
 
 @app.route("/<slug>")
