@@ -11,7 +11,7 @@ def index():
     return render_template("form.html") 
 
 @app.route("/link", methods = ['POST'])
-def link():
+def link(request):
    print(request.form) 
 
 @app.route("/<slug>")
