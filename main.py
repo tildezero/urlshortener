@@ -10,9 +10,9 @@ db = redis.Redis(host = os.getenv("REDISHOST"), port=os.getenv("REDISPORT"), pas
 def index(): 
     return render_template("form.html") 
 
-@app.route("/link")
+@app.route("/link", methods = ['POST'])
 def link():
-    pass
+   print(request.form) 
 
 @app.route("/<slug>")
 def return_link(slug):
