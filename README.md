@@ -1,23 +1,7 @@
----
-title: Flask
-description: A Flask app
-tags:
-  - python
-  - flask
----
+# urlshortener
 
-# Python Flask Example
+it shortens urls ig
 
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fzeromomentum121%2Furlshortener&plugins=redis&envs=PASSWORD&optionalEnvs=PASSWORD&PASSWORDDesc=your+custom+password+for+the+url+shortener)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fflask)
-
-## ✨ Features
-
-- Python
-- Flask
-
-## 💁‍♀️ How to use
-
-- Install Python requirements `pip install -r requirements.txt`
-- Start the server for development `python3 main.py`
+my instance is https://s.zeromomentum.me
